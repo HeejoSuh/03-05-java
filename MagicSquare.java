@@ -7,14 +7,8 @@
  * This program creates the magic square of numbers
  ****************************************************************************/
 
-
-
-
-
 public class MagicSquare{
-	//creates the magic square
-
-
+	//creates the magic squares
     //--------------------------
     public boolean checkMagicSquare(Integer[] squares) {
     	//literally check every row & column if the total equals 15
@@ -67,7 +61,7 @@ public class MagicSquare{
 
     //--------------------------
     public void modify(Integer[] squares, int start, int end) {
-    	//Mutates the square using recursion
+    	//Modifies the square using recursion
     	
     	if(start == end && checkMagicSquare(squares)) {
     		//if have checked for magic square and modified every number
@@ -94,10 +88,3 @@ public class MagicSquare{
     	getSquare.modify(intArray, 0, 8); //start index is 0, end index is 8 (not 9)
 	}
 }
-
-
-
-
-
-
-
